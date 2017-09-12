@@ -1,0 +1,3 @@
+This is a line with lowercase cli
+This is a line with uppercase CLI
+This is a line with mixed case cLi
