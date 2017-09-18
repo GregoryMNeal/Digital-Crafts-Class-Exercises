@@ -1,0 +1,1 @@
+integer_input = int(input ("Enter an integer: "))
