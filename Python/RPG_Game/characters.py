@@ -4,6 +4,10 @@ class Character:
     def __init__ (self, name):
         self.name = name
 
+    @classmethod
+    def get_classname(cls):
+        return cls.__name__
+
     def alive (self):
         if self.health > 0:
             return True
@@ -12,7 +16,7 @@ class Character:
 
     def attack (self, other_guy):
         other_guy.health -= self.power
-        if self.name == 'Greg':
+        if other_guy.get_classname() == Hero:
             print("You do {} damage to the goblin.".format(self.power))
         else:
             print("The goblin does {} damage to you.".format(self.power))
