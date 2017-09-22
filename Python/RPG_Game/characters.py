@@ -4,10 +4,6 @@ class Character:
     def __init__ (self, name):
         self.name = name
 
-    def probability (self, events, outcomes):
-        result = (events / outcomes) * 100
-        return result
-
     def alive (self):
         if self.health > 0:
             return True
@@ -58,6 +54,7 @@ class Shadow (Character):
     def __init__ (self, name):
         super().__init__(name)
         self.health = 1
+        self.times_attacked = 0
 
 # Zombie Class - doesn't die
 class Zombie (Character):
@@ -65,6 +62,12 @@ class Zombie (Character):
     def __init__ (self, name):
         super().__init__(name)
 
-# Haiki Class - she shoots various types of lasers from her eyes
-#   based on the application
+# Haiki Class - she shoots a graduated response laser out of her eyes.
+#  She can vary the power of the laser depending on the application anywhere
+#  from 5 watts (enough to start a campfire) to 100,000 watts (military grade).
+#  The higher the watts the greater the damage she can do.
+
 class Haiki (Character):
+
+    def __init__ (self, name, watts):
+        super().__init__(name)
