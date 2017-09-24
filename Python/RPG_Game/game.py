@@ -9,6 +9,7 @@ from characters import Hero, Goblin
 def main():
     good_guy = Hero('Greg')
     bad_guy = Goblin('Godzilla')
+    zombie_guy = Zombie('Spicoli')
 
     while bad_guy.alive() and good_guy.alive():
         good_guy.print_status()

@@ -4,22 +4,23 @@ class Character:
     def __init__ (self, name):
         self.name = name
 
-    @classmethod
-    def get_classname(cls):
-        return cls.__name__
-
     def alive (self):
         if self.health > 0:
             return True
         else:
             return False
 
-    def attack (self, other_guy):
-        other_guy.health -= self.power
-        if other_guy.get_classname() == Hero:
-            print("You do {} damage to the goblin.".format(self.power))
+    def attack (self, enemy):
+        damage_done = enemy.damage()
+        if self.name == 'Greg':
+            print("You do {} damage to the goblin.".format(damage_done))
         else:
-            print("The goblin does {} damage to you.".format(self.power))
+            print("The goblin does {} damage to you.".format(damage_done))
+
+    def damage(self, enemy):
+        enemy.health = enemy.health - self.power
+        damage_done = self.power
+        return damage_done
 
 # Goblin Class
 class Goblin (Character):
@@ -50,7 +51,7 @@ class Medic (Character):
         super().__init__(name)
 
     def heal(self, patient):
-        patient.health += 2
+        patient.health = patient.health + 2
 
 # Shadow Class
 class Shadow (Character):
@@ -65,6 +66,14 @@ class Zombie (Character):
 
     def __init__ (self, name):
         super().__init__(name)
+        self.health = 1
+        self.power = 1
+
+# The Zombie can't die
+    def damage(self, enemy):
+        damage_done = 0
+        return damage_done
+
 
 # Haiki Class - she shoots a graduated response laser out of her eyes.
 #  She can vary the power of the laser depending on the application anywhere
