@@ -1,0 +1,28 @@
+body {
+  margin: 400px;
+}
+
+div.modal-dialog {
+  position: fixed;
+  height: 130px;
+  width: 325px;
+  top: 220px;
+  left: 550px;
+  border: 5px solid black;
+  padding: 10px;
+  background-color: grey
+}
+label.modal-title {
+  font-size: 150%;
+  color: white;
+}
+div.modal-content {
+  padding: 25px;
+  background-color: white;
+}
+div.modal-buttons {
+  position: absolute;
+  top: 126px;
+  left: 250px;
+  boder: 2px solid #D3D3D3;
+}
