@@ -1,0 +1,43 @@
+a {
+  color: blue !important;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+div.topsection {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.awesomeness {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.middlethree {
+  min-height: 100px;
+}
+
+figure {
+  display: inline-block;
+}
+
+figure img {
+  vertical-align: top;
+}
+
+figure figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.footer {
+  display: flex;
+  justify-content: center;
+}
