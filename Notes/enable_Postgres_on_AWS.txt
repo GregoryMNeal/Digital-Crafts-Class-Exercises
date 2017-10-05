@@ -1,0 +1,6 @@
+To enable Postgres on your AWS/Lightsail Server:
+
+- Connect to your AWS server using Terminal on your local
+- From the command line on your AWS/Lightsail server enter:
+
+  sudo dokku plugin:install https://github.com/dokku/dokku-postgres.git postgres

@@ -1,0 +1,11 @@
+To create a Postgres DB on your AWS/Lightsail Server and link it to your app:
+
+- Create a database:
+  ('restaurantdb' is the database being created)
+
+  dokku postgres:create restaurantdb
+
+- Link a database to your application:
+  ('restaurantdb' is the database and testing is the appliction)
+
+  dokku postgres:link restaurantdb testing
