@@ -1,0 +1,4 @@
+
+Click on the link below...
+
+https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins
