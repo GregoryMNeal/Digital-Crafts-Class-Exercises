@@ -1,0 +1,13 @@
+To connect to the server:
+
+- From a Terminal session (any directory)
+- enter 'ssh ubuntu@yourdomainnamehere.com'
+- If packages need to be updated do the steps below to update packages
+
+
+To apply package updates:
+
+- From a command line on your AWS server
+- enter 'sudo apt-get update'
+- enter 'sudo apt-get upgrade'
+- Press enter when prompted for the public key
