@@ -1,0 +1,38 @@
+Create GitHub Repository
+
+Two methods to create a repository:
+
+1. Initiate the repository on the GitHub site
+2. Initiate the repository on your local host
+
+
+To initiate the setup of a Git repository on the GitHub website:
+
+- Navigate to Repositories
+- Click the ’New’ button
+- Enter repository name and description
+- Check the README checkbox
+- If the repository is going to be used for a Python project select ‘Python’ in the drop-down box at the bottom of the page
+- Click the ‘Create repository’ button
+- Click the ‘Clone or download’ button
+- Click the ‘Use HTTPS’ text in the drop-down text box
+- Click the icon next to the text box with the URL to copy the URL to the clipboard
+- On your local, in Terminal, change your working directory to the directory where you want your new directory/repository to be created
+- Use the ‘git clone HTTPS://….’ command using the URL copied from GitHub
+- Done
+
+
+To initiate the setup of a Git repository on your local host:
+
+- On your local, in Terminal, change your working directory to be the directory you want Git to make the top of your repository and enter ‘git init’ on the command line
+- Enter ‘git add .’ on the command line
+- Commit the files that you've staged in your local repository.  Enter ‘git commit -m “First commit”’
+- Create your repository on GitHub - DON’T INITIALIZE WITH A README.
+- Click the ‘Clone or download’ button
+- Click the ‘Use HTTPS’ text in the drop-down text box
+- Click the icon next to the text box with the URL to copy the URL to the clipboard
+- In Terminal, add the URL for the remote repository where your local repository will be pushed.  Enter ‘git remote add origin HTTPS://…’ command using the URL copied from GitHub
+- Push the changes in your local repository to GitHub.  Enter ‘git push -u origin master’ on the command line
+- If the push doesn’t work because you created the README or for some reason you have files in the GitHub repository that you don't have on your local but you don't care and want to push to GitHub you can force the push.  Enter ‘git push -f -u origin master’.  The -f means to force everything on your local to be pushed to GitHub
+- See website for example - https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+- Done
