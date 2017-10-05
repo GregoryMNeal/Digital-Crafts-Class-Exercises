@@ -1,0 +1,38 @@
+To enable HTTPS:// on your AWS/Lightsail Server:
+
+The AWS server portion of this process:
+
+- Connect to your AWS server using Terminal on your local
+- From the command line on your AWS/Lightsail server enter:
+
+  sudo dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+
+
+- From the command line on your AWS server enter:
+  (don't forget to enter YOUR email address as part of this command)
+
+  dokku config:set --no-restart myapp DOKKU_LETSENCRYPT_EMAIL=youremailaddress@gmail.com
+
+
+- From the command line on your AWS/Lightsail server enter: (do this for every app)
+
+  dokku letsencrypt myapp
+
+
+- Done with the AWS server side of this process.  You can now log off.
+
+
+The Lightsail portion of this process:
+
+- Using your web browse to navigate to the AWS Management Console and sign in
+- In the search bar type 'Lightsail' and select Lightsail from the search results
+- Select the instance (server) you want to enable HTTPS for
+- Click the 'Networking' tab
+- In the Firewall settings at the bottom of the page:
+  - Click '+ Add another'
+  - Choose 'HTTPS'
+  - Click 'Save'
+
+- Done with the Lightsail side of this process.  You can now sign off.
+
+- You are done with this process.

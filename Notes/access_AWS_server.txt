@@ -1,4 +1,4 @@
-To connect to the server:
+To connect to your AWS/Lightsail server:
 
 - From a Terminal session (any directory)
 - enter 'ssh ubuntu@yourdomainnamehere.com'
@@ -11,3 +11,8 @@ To apply package updates:
 - enter 'sudo apt-get update'
 - enter 'sudo apt-get upgrade'
 - Press enter when prompted for the public key
+
+
+To log off your AWS/Lightsail server:
+
+- Enter 'exit', press Enter
