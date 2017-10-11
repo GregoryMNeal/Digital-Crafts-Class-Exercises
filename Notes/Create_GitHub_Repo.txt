@@ -24,7 +24,8 @@ To initiate the setup of a Git repository on the GitHub website:
 
 To initiate the setup of a Git repository on your local host:
 
-- On your local, in Terminal, change your working directory to be the directory you want Git to make the top of your repository and enter ‘git init’ on the command line
+- On your local, in Terminal, change your working directory to be the directory you want Git to make the top of your repository
+- Enter ‘git init’ on the command line
 - Enter ‘git add .’ on the command line
 - Commit the files that you've staged in your local repository.  Enter ‘git commit -m “First commit”’
 - Create your repository on GitHub - DON’T INITIALIZE WITH A README.
