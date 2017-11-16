@@ -24,16 +24,12 @@ To initiate the setup of a Git repository on the GitHub website:
 
 To initiate the setup of a Git repository on your local host:
 
-- On your local, in Terminal, change your working directory to be the directory you want Git to make the top of your repository
-- Enter ‘git init’ on the command line
-- Enter ‘git add .’ on the command line
-- Commit the files that you've staged in your local repository.  Enter ‘git commit -m “First commit”’
-- Create your repository on GitHub - DON’T INITIALIZE WITH A README.
-- Click the ‘Clone or download’ button
-- Click the ‘Use HTTPS’ text in the drop-down text box
-- Click the icon next to the text box with the URL to copy the URL to the clipboard
-- In Terminal, add the URL for the remote repository where your local repository will be pushed.  Enter ‘git remote add origin HTTPS://…’ command using the URL copied from GitHub
-- Push the changes in your local repository to GitHub.  Enter ‘git push -u origin master’ on the command line
-- If the push doesn’t work because you created the README or for some reason you have files in the GitHub repository that you don't have on your local but you don't care and want to push to GitHub you can force the push.  Enter ‘git push -f -u origin master’.  The -f means to force everything on your local to be pushed to GitHub
-- See website for example - https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+- Create the repository on GitHub without a README
+- On your local, set your working directory to where you want your Git repository
+- On your local, git init
+- On your local, git add README.md (may not be necessary of React, it may create a README for you)
+- On your local, git commit -m "first commit"
+- Get the link to the GitHub repository using 'SSH' - example 'git@github.com:HarleyGeek/react-hello.git'
+- On your local, git remote add origin git@github.com:HarleyGeek/react-hello.git (where 'git@github.com:HarleyGeek/react-hello.git' is the link from the previous step)
+- On your local, git push -u origin master
 - Done
